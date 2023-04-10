@@ -1,5 +1,16 @@
 .home-page {
-    background-color: #DC0A2D;
-    width: 390px;
-    height: 100vh;
+  background-color: #dc0a2d;
+  width: 390px;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 12px 0px;
+  gap: 8px;
+  background: #ffffff;
+  width: 352px;
+  height: 548.69px;
+  box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
