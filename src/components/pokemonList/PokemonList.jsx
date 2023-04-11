@@ -1,4 +1,4 @@
-const pokemonList = [
+const PokemonList = [
   {
     name: "Bulbasaur",
     id: "001",
@@ -208,4 +208,4 @@ const pokemonList = [
   },
 ];
 
-export default pokemonList;
+export default PokemonList;

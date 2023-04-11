@@ -4,7 +4,7 @@ import PokemonList from "../pokemonList/PokemonList.jsx";
 import ArrowLeft from "/arrow-left.svg";
 import Pokeball from "/pokeball.svg";
 import Frame from "/Frame.svg";
-import Weight from "/weight.svg";
+import Weight from "/Weight.svg";
 import Height from "/Height.svg";
 
 
@@ -13,7 +13,7 @@ function Card() {
     <div className="card-detail">
       <header>
         <div>
-          <img src={ArrowLeft} />
+          <img src={ArrowLeft}/>
           <h2>{PokemonList[0].name}</h2>
           <p>#{PokemonList[0].id}</p>
           <img src={Pokeball} />
@@ -67,7 +67,7 @@ function Card() {
             <progress
               id=""
               max="200"
-              value={pokemonList[0].stats.hp}
+              value={PokemonList[0].stats.hp}
             ></progress>
 
             <label htmlFor="">0{PokemonList[0].stats.atk}</label>{" "}

@@ -1,16 +1,15 @@
 import React from 'react'
 import './Item.css'
-import Silhouette from '../../../../public/silhoutte.svg'
 
-function Item() {
+function Item(props) {
   return (
-    <div className='item'>
+    <div className='item' style={{backgroundColor:props.color}}>
         <div className='id-img'>
-            <p className='pokemon-id'>#999</p>
-            <img className='imagen-pokemon' src={Silhouette}/>
+            <p className='pokemon-id'>{props.id}</p>
+            <img className='imagen-pokemon'  src={props.image}/>
         </div>
-            <p className='pokemon-name'>Pokemon Name</p>
-    </div>
+            <p className='pokemon-name'>{props.name}</p>
+        </div>
   )
 }
 
