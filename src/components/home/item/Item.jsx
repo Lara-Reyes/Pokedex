@@ -5,7 +5,7 @@ function Item(props) {
   return (
     <div className='item' style={{backgroundColor:props.color}}>
         <div className='id-img'>
-            <p className='pokemon-id'>{props.id}</p>
+            <p className='pokemon-id' style={{color:props.color}}>#{props.id}</p>
             <img className='imagen-pokemon'  src={props.image}/>
         </div>
             <p className='pokemon-name'>{props.name}</p>
