@@ -1,0 +1,30 @@
+.item {
+  width: 104px;
+  height: 108px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color:gray;
+}
+.id-img {
+  background-color: #ffffff;
+  margin: 2px;
+  border-radius: 5px;
+  
+}
+.pokemon-id {
+  font-size: 10px;
+  position: relative;
+  left: 6.5em;
+  padding: 2px;
+}
+.imagen-pokemon {
+  width: 55px;
+  height: auto;
+  position: relative;
+  left: 1.3rem;
+}
+.pokemon-name {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}

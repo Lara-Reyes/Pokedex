@@ -1,13 +1,23 @@
-import React from 'react'
-import './Header.css'
-import Pokeball from '/Pokeball.png'
+import React from "react";
+import "./Header.css";
+import Pokeball from "/pokeball.svg";
+import Hashtag from '/hashtag.svg';
+import Search from '/search.svg';
 
 function Header() {
   return (
-    <div>
-    <img className='pokeball-img' src={Pokeball} alt="pokeball" />
-    </div>
-  )
+    <>
+      <div className="header">
+        <img className="pokeball-img" src={Pokeball} alt="pokeball" />
+        <h1>Pokédex</h1>
+      </div>
+      <div className="search">
+      <img className="search-icon" src={Search}/>
+        <input className="searchBar" type="search" placeholder="Search"/>
+        <button><img className="sort" src={Hashtag}/></button>
+      </div>
+    </>
+  );
 }
 
-export default Header
+export default Header;
