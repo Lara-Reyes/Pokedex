@@ -1,3 +1,9 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 .home-page {
   background-color: #dc0a2d;
   width: 390px;
@@ -13,4 +19,5 @@
   height: 548.69px;
   box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  align-content: flex-start;
 }
