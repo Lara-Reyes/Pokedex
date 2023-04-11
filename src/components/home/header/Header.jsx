@@ -4,7 +4,7 @@ import Pokeball from "/pokeball.svg";
 import Hashtag from '/hashtag.svg';
 import Search from '/search.svg';
 
-function Header() {
+function Header(onChange) {
   return (
     <>
       <div className="header">
@@ -13,7 +13,7 @@ function Header() {
       </div>
       <div className="search">
       <img className="search-icon" src={Search}/>
-        <input className="searchBar" type="search" placeholder="Search"/>
+        <input onChange={onChange} className="searchBar" type="search" placeholder="Search"/>
         <button><img className="sort" src={Hashtag}/></button>
       </div>
     </>

@@ -2,7 +2,7 @@ const PokemonList = [
   {
     name: "Bulbasaur",
     id: "001",
-    image: "/bulbasaur.png",
+    image: "/bulbasaur.svg",
     color: "#74CB48",
     secondary_color: "#A43E9E",
     main_type: "Grass",
@@ -25,7 +25,7 @@ const PokemonList = [
   {
     name: "Charmander",
     id: "004",
-    image: "/charmander.png",
+    image: "/charmander.svg",
     color: "#f57d31",
     secondary_color: "",
     main_type: "Fire",
@@ -48,7 +48,7 @@ const PokemonList = [
   {
     name: "Squirtle",
     id: "007",
-    image: "/squirtle.png",
+    image: "/squirtle.svg",
     color: "#6493EB",
     secondary_color: "",
     main_type: "Water",
@@ -71,7 +71,7 @@ const PokemonList = [
   {
     name: "Butterfree",
     id: "012",
-    image: "/butterfree.png",
+    image: "/butterfree.svg",
     color: "#A7B723",
     secondary_color: "#A891EC",
     main_type: "Bug",
@@ -94,7 +94,7 @@ const PokemonList = [
   {
     name: "Pikachu",
     id: "025",
-    image: "/pikachu.png",
+    image: "/pikachu.svg",
     color: "#F9CF30",
     secondary_color: "",
     main_type: "Electric",
@@ -117,7 +117,7 @@ const PokemonList = [
   {
     name: "Gastly",
     id: "092",
-    image: "/gastly.png",
+    image: "/gastly.svg",
     color: " #70559B",
     secondary_color: "#A43E9E",
     main_type: "Ghost",
@@ -140,7 +140,7 @@ const PokemonList = [
   {
     name: "Ditto",
     id: "132",
-    image: "/ditto.png",
+    image: "/ditto.svg",
     color: "#AAA67F",
     secondary_color: "",
     main_type: "Normal",
@@ -163,7 +163,7 @@ const PokemonList = [
   {
     name: "Mew",
     id: "152",
-    image: "/mew.png",
+    image: "/mew.svg",
     color: "#FB5584",
     secondary_color: "",
     main_type: "Psychic",
@@ -186,7 +186,7 @@ const PokemonList = [
   {
     name: "Aron",
     id: "304",
-    image: "/aron.png",
+    image: "/aron.svg",
     color: "#B7B9D0",
     secondary_color: "#B69E31",
     main_type: "Steel",
