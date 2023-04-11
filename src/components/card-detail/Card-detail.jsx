@@ -6,7 +6,7 @@ import Pokeball from "/pokeball.svg";
 import Frame from "/Frame.svg";
 import Weight from "/weight.svg";
 import Height from "/Height.svg";
-import pokemonList from "../pokemonList/PokemonList.jsx";
+
 
 function Card() {
   return (
