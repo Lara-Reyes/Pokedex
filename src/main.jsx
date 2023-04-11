@@ -10,7 +10,7 @@ import Card from './components/card-detail/Card-detail';
 
 const router = createBrowserRouter([
   {
-    path: "/pokemones",
+    path: "/",
     element: <Home/>,
   },
     {

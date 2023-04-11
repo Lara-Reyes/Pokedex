@@ -17,7 +17,7 @@ function Card() {
     )
   
   const Back = () => {
-    navigate (`/pokemones/`)
+    navigate (`/`)
   }
 
   return (
