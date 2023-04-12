@@ -2,8 +2,6 @@ import React from "react";
 import "./Header.css";
 import Pokeball from "/pokeball.svg";
 import Search from "/search.svg";
-import Hashtag from "/hashtag.svg";
-import Alphabetical from '/alphabetical.svg';
 
 function Header({ onChange , onClick , source }) {
   return (
