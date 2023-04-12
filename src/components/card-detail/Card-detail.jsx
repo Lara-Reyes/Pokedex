@@ -6,7 +6,8 @@ import Pokeball from "/pokeball.svg";
 import Frame from "/Frame.svg";
 import Weight from "/Weight.svg";
 import Height from "/Height.svg";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import FrameLeft from '/frameLeft.svg'
+import { useNavigate, useParams } from "react-router-dom";
 
 function Card() {
   const navigate = useNavigate();
@@ -32,7 +33,8 @@ function Card() {
           <p className="white number">#{currentPokemon.id}</p>
         </div>
         <img src={Pokeball} className="pokeball" />
-        <img src={Frame} />
+        <img className="frame" src={Frame} />
+        <img className="frameLeft" src={FrameLeft}/>
       </header>
 
       <img className="img-pokemon" src={currentPokemon.image} />
@@ -73,10 +75,10 @@ function Card() {
         <p className="description">{currentPokemon.description}</p>
         <h3 style={{ color: currentPokemon.color }}>Base Stats</h3>
         <article className="stats">
-          {Object.keys(currentPokemon.stats).map((key) => {
+          {Object.keys(currentPokemon.stats).map((key, index) => {
             const stat = currentPokemon.stats[key];
             return (
-              <>
+              <div key={index}>
                 <div className="each-stat">
                   <div className="color-stats">
                     <h5
@@ -90,9 +92,10 @@ function Card() {
                   <p className="stat-number">{stat}</p>
                   <progress className="stat-bar" min="0" max="200" value={stat} style={{ accentColor: currentPokemon.color }} />
                 </div>
-              </>
+              </div>
             );
           })}
+          <hr className="line" />
         </article>
       </section>
     </div>

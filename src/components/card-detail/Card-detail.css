@@ -36,25 +36,39 @@ h2 {
   right: 0.5em;
   top: 0.4em;
 }
+.frame {
+    position: absolute;
+    right: 1.6em;
+    top: 12rem;
+}
+.frameLeft {
+    position: absolute;
+    width: 28px;
+    top: 10.7rem;
+    left: 1.7em;
+}
 .img-pokemon {
   position: absolute;
   width: 220px;
   top: 5em;
   right: 6em;
+  z-index: 1;
 }
 .characteristics {
   background-color: white;
-  height: auto;
+  height: 65vh;
   border-radius: 10px;
   margin: 0.2em;
   padding-top: 4em;
   text-align: center;
+  position: relative;
 }
 .type {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5em;
 }
+
 .about {
     margin: 0 2em;
 }
@@ -110,12 +124,12 @@ h4 {
 }
 .each-stat {
     display: flex;
+    align-items: center;
 }
 .color-stats {
   width: 50px;
   text-align: right;
   padding-right: 14px;
-  border-right: 2px solid black;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -125,7 +139,13 @@ h4 {
 .stat-bar {
   width: 16em;
   height: 12px;
-  margin-top: 4px;
+}
+.line {
+    position: absolute;
+    left: 3.5em;
+    bottom: 0.6em;
+    height: 7.5em;
+    background-color: rgba(216, 211, 211, 0.341);
 }
 
 
