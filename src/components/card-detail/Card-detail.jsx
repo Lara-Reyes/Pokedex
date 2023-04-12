@@ -49,28 +49,28 @@ function Card() {
         <h3 style={{ color: currentPokemon.color }}>About</h3>
         <article className="about">
           <div>
-            <div>
-              <img src={Weight} />
-              <p>{currentPokemon.weight}</p>
+            <div className="about-wh">
+              <img className="about-img weight" src={Weight} />
+              <p className="info">{currentPokemon.weight}</p>
             </div>
-            <h4>Weight</h4>
+            <h4 className="h4-wh">Weight</h4>
           </div>
           <hr />
           <div>
-            <div>
-              <img src={Height} />
-              <p>{currentPokemon.height}</p>
+            <div className="about-wh">
+              <img className="about-img height" src={Height} />
+              <p className="info">{currentPokemon.height}</p>
             </div>
-            <h4>Height</h4>
+            <h4 className="h4-wh">Height</h4>
           </div>
           <hr />
           <div>
-            <p>{currentPokemon.main_ability}</p>
-            <p>{currentPokemon.secondary_ability}</p>
-            <h4>Moves</h4>
+            <p className="info">{currentPokemon.main_ability}</p>
+            <p className="info move">{currentPokemon.secondary_ability}</p>
+            <h4 className="h4-moves">Moves</h4>
           </div>
         </article>
-        <p>{currentPokemon.description}</p>
+        <p className="description">{currentPokemon.description}</p>
         <h3 style={{ color: currentPokemon.color }}>Base Stats</h3>
         <article className="stats">
           {Object.keys(currentPokemon.stats).map((key) => {

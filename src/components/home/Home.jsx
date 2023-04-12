@@ -13,7 +13,6 @@ function Home() {
   const [pokemonsToShow, setPokemonsToShow] = useState(PokemonList);
 
   useEffect(() => {
-    console.log(input);
     setIcon(order === "a" ? Alphabetical : Hashtag);
     const filteredPokemons = PokemonList.filter((pokemon) =>
     pokemon.name.toLowerCase().includes(input.toLowerCase())
@@ -39,7 +38,6 @@ function Home() {
   );
   console.log(order);
   }, [input, order]);
-
 
 
   function OnChangeInput(e) {
