@@ -1,10 +1,11 @@
 import React from "react";
 import "./Header.css";
 import Pokeball from "/pokeball.svg";
-import Hashtag from "/hashtag.svg";
 import Search from "/search.svg";
+import Hashtag from "/hashtag.svg";
+import Alphabetical from '/alphabetical.svg';
 
-function Header({ onChange }) {
+function Header({ onChange , onClick , source }) {
   return (
     <>
       <div className="header">
@@ -15,7 +16,7 @@ function Header({ onChange }) {
         <img className="search-icon" src={Search} alt="search" />
         <input onChange={onChange} className="searchBar" type="search" placeholder="Search" />
         <button>
-          <img className="sort" src={Hashtag} alt="sort" />
+          <img className="sort" src={source} alt="sort" onClick={onClick} />
         </button>
       </div>
     </>

@@ -88,7 +88,7 @@ function Card() {
                   </div>
 
                   <p className="stat-number">{stat}</p>
-                  <meter className="stat-bar" min="0" max="200" value={stat} />
+                  <progress className="stat-bar" min="0" max="200" value={stat} style={{ accentColor: currentPokemon.color }} />
                 </div>
               </>
             );
