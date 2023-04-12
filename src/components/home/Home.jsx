@@ -5,25 +5,21 @@ import Item from "./item/Item";
 import PokemonList from "../pokemonList/PokemonList";
 
 function Home() {
-  const [filter, setFilter] = useState();
+  const [input, setInput] = useState("");
 
-  function input(e) {
-    setFilter(e.target.value);
+  function OnChangeInput(e) {
+    setInput(e.target.value);
   }
 
-  // const show = PokemonList.filter((palabra) => palabra.includes(filter));
-
+  const filteredPokemons = PokemonList.filter((pokemon) => pokemon.name.toLowerCase().includes(input.toLowerCase()));
+  console.log(filteredPokemons)
+  // el arreglo filteredPokemons contiene los pokemon filtrados del arreglo PokemonList que coiciden con la cadena de texto almacenado en input
   return (
     <div className="home-page">
-      <Header onChange={input} />
+      <Header onChange={OnChangeInput} />
       <div className="main">
-        {PokemonList.map((pokemon) => (
-          <Item
-            name={pokemon.name}
-            id={pokemon.id}
-            image={pokemon.image}
-            color={pokemon.color}
-          />
+        {filteredPokemons.map((pokemon) => (
+          <Item key={pokemon.id} name={pokemon.name} id={pokemon.id} image={pokemon.image} color={pokemon.color} />
         ))}
       </div>
     </div>
