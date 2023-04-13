@@ -20,9 +20,10 @@ function Home() {
     setOrder(order === "a" ? "n" : "a");  //----> función que cambia el estado order cada vez que se hace clic en el botón de ordenamiento.
   }
 
-  useEffect(() => { //----> se utiliza el Hook useEffect para actualizar la lista de Pokémon cada vez que el usuario escribe algo en el campo de búsqueda o cambia el orden.
-    const filteredPokemons = PokemonList.filter((pokemon) =>    //----> se filtran los objetos del array PokemonList para que solo queden aquellos que contengan en su propiedad name la subcadena de texto que se ingresó en el input de búsqueda (input)
-      pokemon.name.toLowerCase().includes(input.toLowerCase())  
+  useEffect(() => { //----> se utiliza el Hook useEffect para actualizar la lista de Pokémon cada vez que el usuario escribe algo en el campo de búsqueda o cambia el orden. se filtran los objetos del array PokemonList para que solo queden aquellos que contengan en su propiedad name la subcadena de texto que se ingresó en el input de búsqueda (input)
+    const filteredPokemons = PokemonList.filter((pokemon) =>  
+    pokemon.name.toLowerCase().includes(input.toLowerCase()) ||
+    pokemon.id.includes(input.toLowerCase())
     );
 
     const sortedPokemons = [...filteredPokemons].sort(function (a, b) {
