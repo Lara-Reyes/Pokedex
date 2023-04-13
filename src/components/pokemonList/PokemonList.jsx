@@ -206,6 +206,77 @@ const PokemonList = [
       spd: "030",
     },
   },
+  {
+    name: "Nidoqueen",
+    id: "031",
+    image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
+    color: "#A43E9E",
+    secondary_color: "#DEC16B",
+    main_type: "Poison",
+    secondary_type: "Ground",
+    weight: "60,0kg",
+    height: "1,3m",
+    main_ability: "Poison Point",
+    secondary_ability: "Rivalry",
+    description:
+    " With scales like armor, this Pokémon will shield its children from any kind of attack.",
+    stats: {
+      hp: "090",
+      atk: "092",
+      def: "087",
+      satk: "075",
+      sdef: "085",
+      spd: "076",
+    },
+  },
+  {
+    name: "Machoke",
+    id: "067",
+    image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png",
+    color: "#C12239",
+    secondary_color: "",
+    main_type: "Fighting",
+    secondary_type: "",
+    weight: "70,5kg",
+    height: "1,5m",
+    main_ability: "Guts",
+    secondary_ability: "No Guard",
+    description:
+      "Its formidable body never gets tired. It helps people by doing work such as the moving of heavy goods.",
+    stats: {
+      hp: "080",
+      atk: "100",
+      def: "070",
+      satk: "050",
+      sdef: "060",
+      spd: "045",
+    },
+  },
+  {
+    name: "Sylveon",
+    id: "700",
+    image: "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/6/63/latest/20160827224211/Sylveon.png/1200px-Sylveon.png",
+    color: "#E69EAC",
+    secondary_color: "",
+    main_type: "Fairy",
+    secondary_type: "",
+    weight: "23,5kg",
+    height: "1,0m",
+    main_ability: "Cute Charm",
+    secondary_ability: "",
+    description:
+      "Sylveon cuts an elegant figure as it dances lightly around, feelers fluttering, but its piercing moves aim straight for its opponents’ weak spots.",
+    stats: {
+      hp: "095",
+      atk: "065",
+      def: "065",
+      satk: "110",
+      sdef: "130",
+      spd: "060",
+    },
+  },
+  
+
 ];
 
 export default PokemonList;

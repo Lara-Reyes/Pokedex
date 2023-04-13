@@ -14,9 +14,11 @@ function Home() {
 
   useEffect(() => {
     setIcon(order === "a" ? Alphabetical : Hashtag);
+
     const filteredPokemons = PokemonList.filter((pokemon) =>
     pokemon.name.toLowerCase().includes(input.toLowerCase())
   );
+
   const sortedPokemons = [...filteredPokemons].sort(function (a, b) {
     var nameA = a.name;
     var nameB = b.name;
@@ -32,11 +34,11 @@ function Home() {
   const sortedNumerical = [...filteredPokemons].sort(function (a, b) {
     return a.id - b.id;
   }); 
-  console.log(sortedNumerical, sortedPokemons);
+  
   setPokemonsToShow(
     order === "a" ? sortedPokemons : sortedNumerical
   );
-  console.log(order);
+
   }, [input, order]);
 
 
