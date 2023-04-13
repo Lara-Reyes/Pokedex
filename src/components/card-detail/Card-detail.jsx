@@ -16,10 +16,28 @@ function Card() {
   const currentPokemon = PokemonList.find(
     element => element.name == name 
     )
+
+    const currentIndex = PokemonList.findIndex(
+      element => element.name == name 
+    )
+  
   
   const Back = () => {
     navigate (`/`)
   }
+  const next = () => {
+    if (currentIndex +1 === PokemonList.length ) {
+      navigate (`/pokemones/${PokemonList[0].name}`)
+    } else {
+      navigate (`/pokemones/${PokemonList[currentIndex +1].name}`)
+  }};
+  const previous = () => {
+    if (currentIndex === 0 ) {
+      navigate (`/pokemones/${PokemonList[PokemonList.length-1].name}`)
+    } else {
+      navigate (`/pokemones/${PokemonList[currentIndex -1].name}`)
+  }}
+  
 
   return (
     <div
@@ -33,8 +51,8 @@ function Card() {
           <p className="white number">#{currentPokemon.id}</p>
         </div>
         <img src={Pokeball} className="pokeball" />
-        <img className="frame" src={Frame} />
-        <img className="frameLeft" src={FrameLeft}/>
+        <img className="frame" src={Frame}  onClick={next}/>
+        <img className="frameLeft" src={FrameLeft} onClick={previous} />
       </header>
 
       <img className="img-pokemon" src={currentPokemon.image} />
